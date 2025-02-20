@@ -1,0 +1,25 @@
+###
+# @name createAsset
+POST http://localhost:3000/assets
+Content-Type: application/json
+
+{
+    "_id": "2",
+    "symbol": "A2"
+}
+
+###
+GET http://localhost:3000/assets
+
+###
+# @name createOrder
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+    "asset": "2",
+    "price": 3453
+}
+
+###
+GET http://localhost:3000/orders
